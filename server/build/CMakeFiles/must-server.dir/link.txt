@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/must-server.dir/src/main.cpp.o" "CMakeFiles/must-server.dir/src/modbus_reader.cpp.o" "CMakeFiles/must-server.dir/src/udp_sender.cpp.o" "CMakeFiles/must-server.dir/src/config.cpp.o" -o must-server  /usr/lib/aarch64-linux-gnu/libmodbus.so -lpthread 

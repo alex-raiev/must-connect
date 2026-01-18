@@ -1,0 +1,87 @@
+{
+  "modbus": {
+    "port": "/dev/ttyUSB0",
+    "baudrate": 19200,
+    "parity": "N",
+    "dataBits": 8,
+    "stopBits": 1,
+    "deviceId": 4
+  },
+  "udp": {
+    "host": "192.168.1.127",
+    "port": 9090
+  },
+  "pollInterval": 1000,
+  "registers": [
+    {
+      "address": 10104,
+      "name": "Battery Voltage, V",
+      "scale": 0.1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 110,
+      "name": "Battery Current, A",
+      "scale": 1,
+      "isSigned": true,
+      "dataType": "Int16"
+    },
+    {
+      "address": 113,
+      "name": "Battery State of Charge, %",
+      "scale": 1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 111,
+      "name": "Inverter Temperature, °C",
+      "scale": 1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 10102,
+      "name": "Load Power, W",
+      "scale": 1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 10109,
+      "name": "Load Percentage, %",
+      "scale": 1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 20102,
+      "name": "AC Output Voltage, V",
+      "scale": 0.1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 20109,
+      "name": "Inverter Work Mode",
+      "scale": 1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 20119,
+      "name": "PV Voltage, V",
+      "scale": 0.1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 20142,
+      "name": "Fault / Protection Status Bitmap",
+      "scale": 1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    }
+  ]
+}
