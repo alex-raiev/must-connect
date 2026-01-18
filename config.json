@@ -14,7 +14,7 @@
   "pollInterval": 1000,
   "registers": [
     {
-      "address": 10104,
+      "address": 25205,
       "name": "Battery Voltage, V",
       "scale": 0.1,
       "isSigned": false,
@@ -23,7 +23,7 @@
     {
       "address": 110,
       "name": "Battery Current, A",
-      "scale": 1,
+      "scale": 0.1,
       "isSigned": true,
       "dataType": "Int16"
     },
@@ -42,23 +42,51 @@
       "dataType": "UInt16"
     },
     {
-      "address": 10102,
-      "name": "Load Power, W",
-      "scale": 1,
-      "isSigned": false,
-      "dataType": "UInt16"
-    },
-    {
-      "address": 10109,
-      "name": "Load Percentage, %",
-      "scale": 1,
-      "isSigned": false,
-      "dataType": "UInt16"
-    },
-    {
       "address": 20102,
       "name": "AC Output Voltage, V",
       "scale": 0.1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 25206,
+      "name": "Inverter Voltage, V",
+      "scale": 0.1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 10102,
+      "name": "Frequency, Hz",
+      "scale": 0.1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 25213,
+      "name": "Inverter Power, kVA",
+      "scale": 0.01,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 25215,
+      "name": "Load Power, kW",
+      "scale": 0.01,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 25202,
+      "name": "Grid Voltage, V",
+      "scale": 1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 25201,
+      "name": "Work State",
+      "scale": 1,
       "isSigned": false,
       "dataType": "UInt16"
     },
@@ -70,9 +98,16 @@
       "dataType": "UInt16"
     },
     {
-      "address": 20119,
-      "name": "PV Voltage, V",
-      "scale": 0.1,
+      "address": 10101,
+      "name": "Charger Status",
+      "scale": 1,
+      "isSigned": false,
+      "dataType": "UInt16"
+    },
+    {
+      "address": 20101,
+      "name": "Inverter Status",
+      "scale": 1,
       "isSigned": false,
       "dataType": "UInt16"
     },
